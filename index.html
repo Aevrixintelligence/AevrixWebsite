@@ -1171,6 +1171,20 @@ document.addEventListener("click",function(e){
   if(history.replaceState){history.replaceState(null,"",window.location.pathname+window.location.search);}
 });
 
+// On page load: if URL has a #anchor (e.g. arrived from a sub-page nav link),
+// scroll to it smoothly then strip the # from the URL.
+(function(){
+  if(!window.location.hash)return;
+  var id=window.location.hash.slice(1);
+  var target=document.getElementById(id);
+  if(!target)return;
+  // Wait for layout to settle (fonts, images) before scrolling
+  window.requestAnimationFrame(function(){
+    target.scrollIntoView({behavior:"smooth",block:"start"});
+    if(history.replaceState){history.replaceState(null,"",window.location.pathname+window.location.search);}
+  });
+})();
+
 // MOBILE MENU
 var mbtn=document.getElementById("mb"),mmenu=document.getElementById("mm"),mo=false;
 function setMenu(open){
