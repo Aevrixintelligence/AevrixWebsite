@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en" data-page-name="Real-Time Object Detection">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Real-Time Object Detection — Aevrix Intelligence</title>
+<meta name="description" content="A robust end-to-end pipeline that detects, tracks and counts across multiple live camera feeds — at edge or in the data centre.">
+<link rel="icon" href="../favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../assets/page.css">
+</head>
+<body>
+<header>
+<nav id="nav" aria-label="Primary navigation">
+  <a href="../index.html" class="n-logo" aria-label="Aevrix Intelligence — home"><img src="../media/logo.png" alt="Aevrix Intelligence logo" width="160" height="34"></a>
+  <div class="n-links">
+    <div class="nl-drop">
+      <a href="../index.html#services" class="nl">Solutions</a>
+      <div class="mega" role="menu" aria-label="Solutions">
+        <a href="../solutions/object-detection.html" class="mega-itm" role="menuitem">
+          <span class="mega-ic"><svg viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.4"/><circle cx="10" cy="10" r="2.5" stroke="currentColor" stroke-width="1.4"/></svg></span>
+          <span class="mega-tx"><strong>Real-Time Object Detection</strong><span>Detect, track and count across live feeds at scale</span></span>
+        </a>
+        <a href="../solutions/visual-search.html" class="mega-itm" role="menuitem">
+          <span class="mega-ic"><svg viewBox="0 0 20 20" fill="none"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.4"/><path d="M14 14l4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span>
+          <span class="mega-tx"><strong>Prompt-Based Visual Search</strong><span>Find anything across video with plain-English queries</span></span>
+        </a>
+        <a href="../solutions/chatbot.html" class="mega-itm" role="menuitem">
+          <span class="mega-ic"><svg viewBox="0 0 20 20" fill="none"><path d="M3 5a2 2 0 012-2h10a2 2 0 012 2v7a2 2 0 01-2 2H8l-4 3v-3a2 2 0 01-1-2V5z" stroke="currentColor" stroke-width="1.4"/></svg></span>
+          <span class="mega-tx"><strong>Chatbot for Your Data</strong><span>Conversational AI over your video &amp; image archives</span></span>
+        </a>
+        <a href="../solutions/face-recognition.html" class="mega-itm" role="menuitem">
+          <span class="mega-ic"><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.4"/><circle cx="8" cy="9" r="0.8" fill="currentColor"/><circle cx="12" cy="9" r="0.8" fill="currentColor"/><path d="M7.5 13c.8.8 1.8 1.2 2.5 1.2s1.7-.4 2.5-1.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span>
+          <span class="mega-tx"><strong>Face Recognition</strong><span>On-prem identity, attendance and watchlist alerts</span></span>
+        </a>
+      </div>
+    </div>
+    <div class="nl-drop">
+      <a href="../index.html#industries" class="nl">Industries</a>
+      <div class="mega" role="menu" aria-label="Industries">
+        <a href="../industries/manufacturing.html" class="mega-itm" role="menuitem">
+          <span class="mega-ic"><svg viewBox="0 0 20 20" fill="none"><rect x="2" y="10" width="4" height="8" rx="1" stroke="currentColor" stroke-width="1.4"/><rect x="8" y="6" width="4" height="12" rx="1" stroke="currentColor" stroke-width="1.4"/><rect x="14" y="2" width="4" height="16" rx="1" stroke="currentColor" stroke-width="1.4"/></svg></span>
+          <span class="mega-tx"><strong>Manufacturing</strong><span>Defect detection, PPE &amp; line monitoring</span></span>
+        </a>
+        <a href="../industries/retail.html" class="mega-itm" role="menuitem">
+          <span class="mega-ic"><svg viewBox="0 0 20 20" fill="none"><path d="M3 7l1-3h12l1 3M3 7v9a1 1 0 001 1h12a1 1 0 001-1V7M3 7h14" stroke="currentColor" stroke-width="1.4"/></svg></span>
+          <span class="mega-tx"><strong>Retail</strong><span>Shelf compliance, queues, loss prevention</span></span>
+        </a>
+        <a href="../industries/logistics.html" class="mega-itm" role="menuitem">
+          <span class="mega-ic"><svg viewBox="0 0 20 20" fill="none"><path d="M2 7h10v8H2zM12 10h4l2 3v2h-6" stroke="currentColor" stroke-width="1.4"/><circle cx="5" cy="16" r="1.5" stroke="currentColor" stroke-width="1.4"/><circle cx="15" cy="16" r="1.5" stroke="currentColor" stroke-width="1.4"/></svg></span>
+          <span class="mega-tx"><strong>Logistics &amp; Warehousing</strong><span>Yard, dock and inventory intelligence</span></span>
+        </a>
+        <a href="../industries/healthcare.html" class="mega-itm" role="menuitem">
+          <span class="mega-ic"><svg viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M10 6v8M6 10h8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span>
+          <span class="mega-tx"><strong>Healthcare</strong><span>Hygiene, patient flow, equipment tracking</span></span>
+        </a>
+        <a href="../industries/agriculture.html" class="mega-itm" role="menuitem">
+          <span class="mega-ic"><svg viewBox="0 0 20 20" fill="none"><path d="M10 17V8M10 8c0-3 2-5 5-5-.5 3-2 5-5 5zM10 8c0-2-1.5-4-4-4 .3 2.4 1.6 4 4 4z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></span>
+          <span class="mega-tx"><strong>Agriculture</strong><span>Crop health &amp; livestock from drone footage</span></span>
+        </a>
+        <a href="../industries/smart-cities.html" class="mega-itm" role="menuitem">
+          <span class="mega-ic"><svg viewBox="0 0 20 20" fill="none"><path d="M2 17h16M4 17V9l4-3 4 3v8M12 17V11l3-2 3 2v6" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></span>
+          <span class="mega-tx"><strong>Smart Cities &amp; Safety</strong><span>Traffic, crowds, public-space intelligence</span></span>
+        </a>
+      </div>
+    </div>
+    <a href="../index.html#how" class="nl">How it works</a>
+    <a href="../index.html#features" class="nl">Features</a>
+    <a href="../index.html#faq" class="nl">FAQ</a>
+    <button type="button" class="nc" onclick="openContact()">Contact us</button>
+  </div>
+  <button class="mb" id="mb" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mm"><span></span><span></span><span></span></button>
+</nav>
+<div class="mm" id="mm" aria-label="Mobile navigation">
+  <a href="../index.html#services" class="nl">Solutions</a>
+  <div class="mm-grp">
+    <h4>By Capability</h4>
+    <a href="../solutions/object-detection.html" class="nl">Object Detection</a>
+    <a href="../solutions/visual-search.html" class="nl">Visual Search</a>
+    <a href="../solutions/chatbot.html" class="nl">Data Chatbot</a>
+    <a href="../solutions/face-recognition.html" class="nl">Face Recognition</a>
+  </div>
+  <div class="mm-grp">
+    <h4>By Industry</h4>
+    <a href="../industries/manufacturing.html" class="nl">Manufacturing</a>
+    <a href="../industries/retail.html" class="nl">Retail</a>
+    <a href="../industries/logistics.html" class="nl">Logistics</a>
+    <a href="../industries/healthcare.html" class="nl">Healthcare</a>
+    <a href="../industries/agriculture.html" class="nl">Agriculture</a>
+    <a href="../industries/smart-cities.html" class="nl">Smart Cities</a>
+  </div>
+  <div class="mm-grp">
+    <a href="../index.html#how" class="nl">How it works</a>
+    <a href="../index.html#features" class="nl">Features</a>
+    <a href="../index.html#faq" class="nl">FAQ</a>
+  </div>
+  <button type="button" class="nc" onclick="closeMobile();openContact()">Contact us</button>
+</div>
+</header>
+
+<nav class="bc" aria-label="Breadcrumb"><a href="../index.html">Home</a><span class="sep">›</span><a href="../index.html#services">Solutions</a><span class="sep">›</span><span>Real-Time Object Detection</span></nav>
+
+<section class="p-hero p-hero-stacked">
+  <div class="p-hero-top">
+    <div class="p-eyebrow"><span class="dot"></span>Solution · Detection</div>
+    <h1>Detect <em>anything,</em> on every frame, at scale.</h1>
+    <p class="lede">A production-grade detection pipeline that runs across hundreds of live feeds — counting, classifying and tracking objects with sub-100ms latency. No re-architecture, no cloud round-trips.</p>
+    <div class="p-cta">
+      <button type="button" class="btn-dark" onclick="openContact()">Talk to us →</button>
+      <a href="../index.html#demo" class="btn-out">See live demo</a>
+    </div>
+  </div>
+  <div class="ba-wrap" id="ba">
+    <div class="ba-stage" id="ba-stage" role="slider" aria-label="Compare original frame and AI detection" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
+      <img src="../media/realtime_od0.png" alt="Original camera frame" id="ba-bg" draggable="false">
+      <div class="ba-clip" id="ba-clip">
+        <img src="../media/realtime_od.png" alt="Same frame with AI detection overlays" id="ba-fg" draggable="false">
+      </div>
+      <div class="ba-lbl left">Original</div>
+      <div class="ba-lbl right">With Aevrix</div>
+      <div class="ba-handle" id="ba-handle">
+        <div class="ba-knob" id="ba-knob" aria-hidden="true">
+          <img src="../favicon.ico" alt="" draggable="false">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt">
+  <div class="sec-in">
+    <div class="sec-head">
+      <div class="sec-eyebrow">Capabilities</div>
+      <h2 class="sec-title">Everything you need from a vision pipeline — packaged.</h2>
+    </div>
+    <div class="fg">
+      <article class="fg-card"><div class="fg-ic"><svg viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><circle cx="10" cy="10" r="2.5" stroke="currentColor" stroke-width="1.6"/></svg></div><h3>Multi-class detection</h3><p>People, vehicles, PPE, defects, packages, animals — out-of-the-box classes plus your own fine-tuned ones.</p></article>
+      <article class="fg-card"><div class="fg-ic"><svg viewBox="0 0 20 20" fill="none"><path d="M3 17l4-4 4 4 6-8" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div><h3>Cross-camera tracking</h3><p>Re-identify the same object across overlapping and non-overlapping cameras. Hand-off is automatic.</p></article>
+      <article class="fg-card"><div class="fg-ic"><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.6"/><path d="M10 6v4l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div><h3>Sub-100ms latency</h3><p>On-device inference on NVIDIA Jetson or GPU servers — fast enough to drive real-time actions, not just dashboards.</p></article>
+      <article class="fg-card"><div class="fg-ic"><svg viewBox="0 0 20 20" fill="none"><rect x="2" y="6" width="16" height="10" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M2 10h16" stroke="currentColor" stroke-width="1.6"/></svg></div><h3>Any ONVIF camera</h3><p>Plug into existing IP cameras, NVRs and DVRs. No rip-and-replace, no proprietary hardware lock-in.</p></article>
+      <article class="fg-card"><div class="fg-ic"><svg viewBox="0 0 20 20" fill="none"><path d="M4 4h12v12H4z" stroke="currentColor" stroke-width="1.6"/><path d="M8 8h4v4H8z" fill="currentColor"/></svg></div><h3>Custom zones &amp; lines</h3><p>Draw polygons on the feed for restricted areas, dwell-time zones, or virtual trip-wires — no code.</p></article>
+      <article class="fg-card"><div class="fg-ic"><svg viewBox="0 0 20 20" fill="none"><path d="M3 14l5-5 4 4 5-7" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="17" cy="6" r="1.5" fill="currentColor"/></svg></div><h3>Counts &amp; analytics</h3><p>Tallies streamed to Grafana, Splunk, or your own warehouse via webhooks — second-level granularity.</p></article>
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  var stage=document.getElementById("ba-stage");
+  if(!stage)return;
+  var clip=document.getElementById("ba-clip");
+  var handle=document.getElementById("ba-handle");
+  var fg=document.getElementById("ba-fg");
+  var dragging=false;
+
+  function syncWidth(){
+    // Make the inside (foreground) image use the stage's full pixel width so it lines up with bg
+    var w=stage.clientWidth;
+    if(w>0)stage.style.setProperty("--ba-w", w + "px");
+  }
+  syncWidth();
+  window.addEventListener("resize", syncWidth);
+  // re-sync when each image finishes loading
+  var bg=document.getElementById("ba-bg");
+  if(bg.complete)syncWidth();else bg.addEventListener("load",syncWidth);
+  if(fg.complete)syncWidth();else fg.addEventListener("load",syncWidth);
+  // Observe the stage for any size changes (fonts, layout shifts)
+  if(window.ResizeObserver){new ResizeObserver(syncWidth).observe(stage);}
+
+  function setPct(pct){
+    pct=Math.max(0,Math.min(100,pct));
+    clip.style.width=pct+"%";
+    handle.style.left=pct+"%";
+    stage.setAttribute("aria-valuenow", Math.round(pct));
+  }
+  function pctFromEvent(e){
+    var r=stage.getBoundingClientRect();
+    var x=(e.touches?e.touches[0].clientX:e.clientX)-r.left;
+    return (x/r.width)*100;
+  }
+  function onDown(e){dragging=true;setPct(pctFromEvent(e));e.preventDefault();}
+  function onMove(e){if(!dragging)return;setPct(pctFromEvent(e));}
+  function onUp(){dragging=false;}
+
+  stage.addEventListener("mousedown",onDown);
+  window.addEventListener("mousemove",onMove);
+  window.addEventListener("mouseup",onUp);
+  stage.addEventListener("touchstart",onDown,{passive:false});
+  window.addEventListener("touchmove",onMove,{passive:true});
+  window.addEventListener("touchend",onUp);
+
+  stage.addEventListener("keydown",function(e){
+    var cur=parseFloat(clip.style.width)||50;
+    if(e.key==="ArrowLeft"){setPct(cur-4);e.preventDefault();}
+    else if(e.key==="ArrowRight"){setPct(cur+4);e.preventDefault();}
+    else if(e.key==="Home"){setPct(0);e.preventDefault();}
+    else if(e.key==="End"){setPct(100);e.preventDefault();}
+  });
+
+  setPct(50);
+})();
+</script>
+
+<section class="sec">
+  <div class="sec-in">
+    <div class="cta-strip reveal">
+      <h2>Ready to put detection on every camera you already own?</h2>
+      <p>30-minute call. We'll map your feeds, your use cases, and a deployment plan.</p>
+      <button type="button" class="btn-dark" onclick="openContact()">Talk to us →</button>
+    </div>
+  </div>
+</section>
+
+<footer>© 2024–2026 Aevrix Intelligence · <a href="../index.html">Home</a> · <a href="../index.html#faq">FAQ</a></footer>
+<!-- Contact modal -->
+<div class="cm-ov" id="cm-ov" role="dialog" aria-modal="true" aria-labelledby="cm-title" aria-hidden="true">
+  <div class="cm-box">
+    <button class="cm-close" id="cm-close" aria-label="Close contact dialog" type="button">&times;</button>
+    <div class="cm-eyebrow">Get in touch</div>
+    <h3 class="cm-title" id="cm-title">Let's talk about your visual data</h3>
+    <p class="cm-desc">Fill in your details and we'll respond within one business day.</p>
+    <div class="cm-interest-chip" id="cm-interest-chip">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2" stroke-linecap="round"/></svg>
+      Interested in: <span id="cm-interest-label">Real-Time Object Detection</span>
+    </div>
+    <form id="cm-form" class="cm-form" novalidate>
+      <input type="hidden" name="access_key" value="2586faf3-b597-43ae-ac16-22615ec691d8">
+      <input type="hidden" name="subject" value="New enquiry — Aevrix Visual Intelligence (Real-Time Object Detection)">
+      <input type="hidden" name="from_name" value="Aevrix Website">
+      <input type="checkbox" name="botcheck" class="cm-hp" tabindex="-1" autocomplete="off">
+      <input type="hidden" name="interest" id="cm-interest" value="Real-Time Object Detection">
+      <div class="cm-row">
+        <label class="cm-field"><span class="cm-lbl">Name</span><input type="text" name="name" required autocomplete="name" placeholder="Your full name"></label>
+        <label class="cm-field"><span class="cm-lbl">Email</span><input type="email" name="email" required autocomplete="email" placeholder="you@company.com"></label>
+      </div>
+      <label class="cm-field"><span class="cm-lbl">Company <span class="cm-opt">(optional)</span></span><input type="text" name="company" autocomplete="organization" placeholder="Company name"></label>
+      <label class="cm-field"><span class="cm-lbl">Interested in</span>
+        <select name="interest_select" id="cm-interest-select">
+        <option value="">Select a topic</option>
+        <option value="Real-Time Object Detection" selected>Object Detection</option>
+        <option value="Prompt-Based Visual Search">Visual Search</option>
+        <option value="Chatbot for Your Data">Data Chatbot</option>
+        <option value="Face Recognition">Face Recognition</option>
+        <option value="Manufacturing">Industry · Manufacturing</option>
+        <option value="Retail">Industry · Retail</option>
+        <option value="Logistics & Warehousing">Industry · Logistics</option>
+        <option value="Healthcare">Industry · Healthcare</option>
+        <option value="Agriculture">Industry · Agriculture</option>
+        <option value="Smart Cities & Public Safety">Industry · Smart Cities</option>
+        <option value="General enquiry">Something else</option>
+        </select>
+      </label>
+      <label class="cm-field"><span class="cm-lbl">Message</span><textarea name="message" required rows="4" placeholder="Tell us about your use case…"></textarea></label>
+      <button type="submit" class="btn-teal cm-submit" id="cm-submit">
+        <span class="cm-submit-lbl">Send message</span><span class="cm-spin" aria-hidden="true"></span>
+      </button>
+      <div class="cm-status" id="cm-status" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</div>
+<script src="../assets/contact.js" defer></script>
+<script>
+// Mobile menu toggle + sync interest dropdown to hidden input
+(function(){
+  var mb=document.getElementById("mb"),mm=document.getElementById("mm");
+  if(mb)mb.addEventListener("click",function(){
+    var open=mm.classList.toggle("open");
+    mb.setAttribute("aria-expanded",open?"true":"false");
+    document.body.style.overflow=open?"hidden":"";
+  });
+  window.closeMobile=function(){if(mm){mm.classList.remove("open");document.body.style.overflow="";if(mb)mb.setAttribute("aria-expanded","false");}};
+  var sel=document.getElementById("cm-interest-select"),hidden=document.getElementById("cm-interest"),lbl=document.getElementById("cm-interest-label");
+  if(sel&&hidden){sel.addEventListener("change",function(){
+    hidden.value=sel.value;
+    if(lbl)lbl.textContent=sel.value||"General enquiry";
+  });}
+})();
+</script>
+</body>
+</html>
