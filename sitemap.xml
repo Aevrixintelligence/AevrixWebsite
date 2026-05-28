@@ -2,32 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://aevrixintelligence.com/</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Solutions -->
   <url>
-    <loc>https://aevrixintelligence.com/#services</loc>
+    <loc>https://aevrixintelligence.com/solutions/object-detection.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://aevrixintelligence.com/#how</loc>
+    <loc>https://aevrixintelligence.com/solutions/visual-search.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aevrixintelligence.com/solutions/chatbot.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aevrixintelligence.com/solutions/face-recognition.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Industries -->
+  <url>
+    <loc>https://aevrixintelligence.com/industries/manufacturing.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aevrixintelligence.com/#industries</loc>
+    <loc>https://aevrixintelligence.com/industries/retail.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aevrixintelligence.com/#features</loc>
+    <loc>https://aevrixintelligence.com/industries/logistics.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aevrixintelligence.com/#faq</loc>
+    <loc>https://aevrixintelligence.com/industries/healthcare.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aevrixintelligence.com/industries/agriculture.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aevrixintelligence.com/industries/smart-cities.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
